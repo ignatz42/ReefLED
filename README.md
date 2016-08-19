@@ -1,2 +1,2 @@
 # ReefLED
-An arduino project for controlling aquarium led lighting.
+An Android/Bluetooth/Arduino/Buckpuck project for controlling aquarium led lighting.
