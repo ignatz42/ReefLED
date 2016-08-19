@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ReefLED</string>
+    <string name="startTime">Start Time :</string>
+    <string name="stopTime">Stop Time :</string>
+    <string name="timeChange">Change</string>
+    <string name="enableSunriseSunset">Enable Sunrise / Sunset settings.</string>
+    <string name="chasePercentage">Left - Right Delay :</string>
+    <string name="maxBluePercentage">Maximum Blue Percent</string>
+    <string name="maxWhitePercentage">Maximum White Percentage</string>
+    <string name="blueText">Blue   :</string>
+    <string name="whiteText">White :</string>
+    <string name="riseSetTime">Rise/Set Time:</string>
+    <string name="saveButtonText">Save settings?</string>
+    <string name="cancelButtonText">Cancel Action</string>
+    <string name="timeLabel">Current Time </string>
+    <string name="timeSeperatorLabel">:</string>
+    <string name="dateSeperatorLabel">/</string>
+    <string name="dateLabel">Current Date </string>
+    <string name="tempSeperatorLabel">.</string>
+    <string name="tempUnitLabel">° C</string>
+    <string name="tempWarnLabel">Warning Temp</string>
+    <string name="tempMaxLabel">Maximum Temp</string>
+    <string name="enableAutomaticModeText">Enable Automatic Mode</string>
+    <string name="tempCurrentLabel">Current Temp</string>
+</resources>

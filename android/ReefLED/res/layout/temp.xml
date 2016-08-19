@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:layout_marginLeft="16sp" android:layout_marginRight="16sp">
+	    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="8sp" android:layout_marginBottom="8sp" android:id="@+id/hDivideLinearLayout">
+	        <View android:background="#ffffff" android:layout_height="2sp" android:id="@+id/View01" android:layout_width="fill_parent" android:layout_gravity="center_vertical"></View>
+	    </LinearLayout>
+	    <TableLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:stretchColumns="0" android:layout_marginLeft="16sp" android:layout_marginRight="16sp" android:id="@+id/tempsTableLayout">
+	        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/warnTempTableRow">
+	            <TextView android:layout_width="wrap_content" android:id="@+id/TextView04" android:layout_height="wrap_content" android:text="@string/tempWarnLabel"></TextView>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:singleLine="true" android:lines="1" android:maxLength="2" android:digits="0123456789" android:id="@+id/warnTempWholeEditText"></EditText>
+	            <TextView android:text="@string/tempSeperatorLabel" android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_width="wrap_content"></TextView>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:singleLine="true" android:lines="1" android:maxLength="2" android:digits="0123456789" android:id="@+id/warnTempFracEditText"></EditText>
+	            <TextView android:text="@string/tempUnitLabel" android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_width="wrap_content"></TextView>
+	        </TableRow>
+	        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/maxTempTableRow">
+	            <TextView android:layout_width="wrap_content" android:id="@+id/TextView05" android:layout_height="wrap_content" android:text="@string/tempMaxLabel"></TextView>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:singleLine="true" android:lines="1" android:maxLength="2" android:digits="0123456789" android:id="@+id/maxTempWholeEditText"></EditText>
+	            <TextView android:text="@string/tempSeperatorLabel" android:layout_height="wrap_content" android:id="@+id/textView4" android:layout_width="wrap_content"></TextView>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:singleLine="true" android:lines="1" android:maxLength="2" android:digits="0123456789" android:id="@+id/maxTempFracEditText"></EditText>
+	            <TextView android:text="@string/tempUnitLabel" android:layout_height="wrap_content" android:id="@+id/textView5" android:layout_width="wrap_content"></TextView>
+	        </TableRow>
+	    </TableLayout>
+	    <LinearLayout android:layout_marginBottom="8sp" android:layout_marginTop="8sp" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/hDivideLinearLayout2">
+	        <View android:background="#ffffff" android:layout_gravity="center_vertical" android:layout_height="2sp" android:id="@+id/View02" android:layout_width="fill_parent"></View>
+	    </LinearLayout>    
+    </LinearLayout>
+</ScrollView>

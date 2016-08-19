@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:layout_marginLeft="16sp" android:layout_marginRight="16sp">
+        <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="8sp" android:layout_marginBottom="8sp" android:id="@+id/blueDivideLinearLayout">
+            <TextView android:text="@string/blueText" android:layout_width="wrap_content" android:id="@+id/textView2" android:layout_height="wrap_content" android:layout_marginRight="4sp"></TextView>
+            <View android:background="#ffffff" android:layout_height="2sp" android:id="@+id/view1" android:layout_width="fill_parent" android:layout_gravity="center_vertical"></View>
+        </LinearLayout>
+	    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0" android:layout_marginLeft="16sp" android:layout_marginRight="16sp" android:id="@+id/blueTimesTableLayout">
+	        <TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	            <TextView android:layout_width="wrap_content" android:id="@+id/TextView02" android:layout_height="wrap_content" android:text="@string/startTime"></TextView>
+	            <EditText android:layout_height="wrap_content" android:text="00" android:digits="0123456789" android:maxLength="2" android:inputType="number" android:lines="1" android:layout_width="wrap_content" android:id="@+id/blueOnHoursEditText"></EditText>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number" android:text="00" android:lines="1" android:digits="0123456789" android:maxLength="2" android:id="@+id/blueOnMinutesEditText"></EditText>
+	        </TableRow>
+	        <TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	            <TextView android:layout_width="wrap_content" android:id="@+id/TextView01" android:layout_height="wrap_content" android:text="@string/stopTime"></TextView>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number" android:text="00" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="2" android:id="@+id/blueOffHoursEditText"></EditText>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number" android:text="00" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="2" android:id="@+id/blueOffMinutesEditText"></EditText>
+	        </TableRow>
+	        <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	            <TextView android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_height="wrap_content" android:text="@string/riseSetTime"></TextView>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number" android:text="00" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="2" android:id="@+id/blueRSHoursEditText"></EditText>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number" android:text="00" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="2" android:id="@+id/blueRSMinutesEditText"></EditText>
+	        </TableRow>
+	        <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	            <TextView android:layout_width="wrap_content" android:id="@+id/TextView03" android:layout_height="wrap_content" android:text="@string/chasePercentage"></TextView>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number" android:text="00" android:lines="1" android:digits="0123456789" android:maxLength="3" android:id="@+id/blueChasePercentageEditText"></EditText>
+	            <TextView android:text="%" android:layout_height="wrap_content" android:id="@+id/textView4" android:layout_width="wrap_content"></TextView>
+	        </TableRow>
+	    </TableLayout>
+	    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="8sp" android:layout_marginBottom="8sp" android:id="@+id/whiteDivideLinearLayout">
+	        <TextView android:text="@string/whiteText" android:layout_width="wrap_content" android:id="@+id/TextView07" android:layout_height="wrap_content" android:layout_marginRight="4sp"></TextView>
+	        <View android:background="#ffffff" android:layout_height="2sp" android:id="@+id/View01" android:layout_width="fill_parent" android:layout_gravity="center_vertical"></View>
+	    </LinearLayout>
+	    <TableLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:stretchColumns="0" android:layout_marginLeft="16sp" android:layout_marginRight="16sp" android:id="@+id/whiteTimesTableLayout">
+	        <TableRow android:id="@+id/tableRow5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	            <TextView android:layout_width="wrap_content" android:text="@string/startTime" android:id="@+id/TextView04" android:layout_height="wrap_content"></TextView>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="2" android:id="@+id/whiteOnHoursEditText"></EditText>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="2" android:id="@+id/whiteOnMinutessEditText"></EditText>
+	        </TableRow>
+	        <TableRow android:id="@+id/tableRow6" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	            <TextView android:layout_width="wrap_content" android:text="@string/stopTime" android:id="@+id/TextView05" android:layout_height="wrap_content"></TextView>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="2" android:id="@+id/whiteOffHoursEditText"></EditText>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="2" android:id="@+id/whiteOffMinutesEditText"></EditText>
+	        </TableRow>
+	        <TableRow android:id="@+id/tableRow7" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	            <TextView android:layout_width="wrap_content" android:text="@string/riseSetTime" android:id="@+id/TextView06" android:layout_height="wrap_content"></TextView>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="2" android:id="@+id/whiteRSHoursEditText"></EditText>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="2" android:id="@+id/whiteRSMinutesEditText"></EditText>
+	        </TableRow>
+	        <TableRow android:id="@+id/tableRow8" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	            <TextView android:layout_width="wrap_content" android:text="@string/chasePercentage" android:id="@+id/textView3" android:layout_height="wrap_content"></TextView>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="3" android:id="@+id/whiteChasePercentageEditText"></EditText>
+	            <TextView android:text="%" android:layout_height="wrap_content" android:id="@+id/textView5" android:layout_width="wrap_content"></TextView>
+	        </TableRow>
+	    </TableLayout>
+	    <LinearLayout android:layout_marginBottom="8sp" android:layout_marginTop="8sp" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/hDivideLinearLayout">
+	        <View android:background="#ffffff" android:layout_gravity="center_vertical" android:layout_height="2sp" android:id="@+id/View02" android:layout_width="fill_parent"></View>
+	    </LinearLayout>    
+    </LinearLayout>
+</ScrollView>

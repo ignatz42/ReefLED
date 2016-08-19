@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Device Settings">
+        <EditTextPreference android:title="DeviceID" android:summary="The bluetooth device ID of the BiocubeLED." android:key="deviceIDText"></EditTextPreference>
+        <EditTextPreference android:title="DeviceDelay" android:summary="Communication delay with device." android:defaultValue="150" android:key="deviceDelayText"></EditTextPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

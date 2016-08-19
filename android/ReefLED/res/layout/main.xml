@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center_horizontal">
+<LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center_horizontal" android:id="@+id/dateTimeLinearLayout" android:onClick="myClickHandler" android:layout_margin="10sp" android:padding="5sp">
+    <TextView android:layout_width="wrap_content" android:id="@+id/currentTimeString" android:layout_height="wrap_content" android:text="10:42:03" android:layout_margin="3sp"></TextView>
+    <TextView android:layout_width="wrap_content" android:id="@+id/currentDateString" android:layout_height="wrap_content" android:text="2/25/2011" android:layout_margin="3sp"></TextView>
+</LinearLayout>
+<TableLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_margin="10sp" android:layout_gravity="center_horizontal" android:id="@+id/tempTableLayout" android:onClick="myClickHandler" android:padding="5sp">
+    <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:clickable="true" android:text="@string/tempCurrentLabel" android:id="@+id/textView1" android:layout_height="wrap_content"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="@string/timeSeperatorLabel" android:id="@+id/textView2" android:layout_height="wrap_content" android:layout_marginLeft="2sp" android:layout_marginRight="2sp"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="26.10" android:id="@+id/currentTempString" android:layout_height="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3sp">
+        <TextView android:layout_width="wrap_content" android:text="@string/tempWarnLabel" android:id="@+id/textView4" android:layout_height="wrap_content"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="@string/timeSeperatorLabel" android:id="@+id/textView8" android:layout_height="wrap_content" android:layout_marginLeft="2sp" android:layout_marginRight="2sp"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="45.10" android:id="@+id/warningTempString" android:layout_height="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:id="@+id/tableRow5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3sp">
+        <TextView android:layout_width="wrap_content" android:text="@string/tempMaxLabel" android:id="@+id/textView9" android:layout_height="wrap_content"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="@string/timeSeperatorLabel" android:id="@+id/textView10" android:layout_height="wrap_content" android:layout_marginLeft="2sp" android:layout_marginRight="2sp"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="49.00" android:id="@+id/maxTempString" android:layout_height="wrap_content"></TextView>
+    </TableRow>
+</TableLayout>
+<TableLayout android:layout_height="wrap_content" android:layout_margin="10sp" android:layout_width="wrap_content" android:layout_gravity="center_horizontal" android:id="@+id/ledsTableLayout" android:onClick="myClickHandler" android:padding="5sp">
+    <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView3" android:text="@string/blueText" android:layout_marginRight="3sp"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="204" android:id="@+id/blueLefttValueEditText" android:layout_height="wrap_content"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="@string/blueText" android:id="@+id/textView7" android:layout_height="wrap_content" android:layout_marginRight="3sp" android:layout_marginLeft="3sp"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="255" android:id="@+id/blueRightValueEditText" android:layout_height="wrap_content"></TextView>
+    </TableRow>
+    <TableRow android:id="@+id/tableRow2" android:layout_height="wrap_content" android:layout_width="wrap_content">
+        <TextView android:layout_width="wrap_content" android:text="@string/whiteText" android:id="@+id/textView5" android:layout_height="wrap_content" android:layout_marginRight="3sp"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="0" android:id="@+id/whiteLefttValueEditText" android:layout_height="wrap_content"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView6" android:text="@string/whiteText" android:layout_marginRight="3sp" android:layout_marginLeft="3sp"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="0" android:id="@+id/whiteRightValueEditText" android:layout_height="wrap_content"></TextView>
+    </TableRow>
+</TableLayout>
+<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enableAutomaticModeText" android:id="@+id/enableAutoModeCheckBox" android:checked="true" android:onClick="myClickHandler"></CheckBox>
+<TableLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:stretchColumns="1" android:id="@+id/maxSlidersTableLayout">
+    <LinearLayout android:layout_marginBottom="8sp" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="8sp" android:id="@+id/hLinearLayout">
+        <View android:background="#ffffff" android:layout_gravity="center_vertical" android:layout_height="2sp" android:id="@+id/View01" android:layout_width="fill_parent"></View>
+    </LinearLayout>
+    <TableRow android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/blueSliderTableRow">
+        <TextView android:text="@string/blueText" android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_width="wrap_content"></TextView>
+        <SeekBar android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/blueSeekBar" android:max="100"></SeekBar>
+    </TableRow>
+ <LinearLayout android:layout_marginBottom="8sp" android:layout_marginTop="8sp" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/hLinearLayout1">
+     <View android:background="#ffffff" android:layout_gravity="center_vertical" android:layout_height="2sp" android:id="@+id/View02" android:layout_width="fill_parent"></View>
+ </LinearLayout>        
+    <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/whiteSliderTableRow">
+        <TextView android:text="@string/whiteText" android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_height="wrap_content"></TextView>
+        <SeekBar android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/whiteSeekBar" android:max="100"></SeekBar>
+    </TableRow>
+</TableLayout>
+
+</LinearLayout>

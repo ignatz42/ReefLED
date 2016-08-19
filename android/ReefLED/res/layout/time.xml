@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:layout_marginLeft="16sp" android:layout_marginRight="16sp">
+        <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="8sp" android:layout_marginBottom="8sp" android:id="@+id/hDivideLinearLayout">
+            <View android:background="#ffffff" android:layout_height="2sp" android:id="@+id/view1" android:layout_width="fill_parent" android:layout_gravity="center_vertical"></View>
+        </LinearLayout>
+	    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0" android:layout_marginLeft="16sp" android:layout_marginRight="16sp" android:id="@+id/timesTableLayout">
+	        <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/TableRow01">
+	            <TextView android:text="@string/timeLabel" android:layout_height="wrap_content" android:id="@+id/TextView01" android:layout_width="wrap_content"></TextView>
+	            <EditText android:layout_height="wrap_content" android:inputType="number" android:layout_width="wrap_content" android:text="00" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="2" android:id="@+id/currentTimeHoursEditText"></EditText>
+	            <TextView android:text="@string/timeSeperatorLabel" android:layout_height="wrap_content" android:id="@+id/TextView03" android:layout_width="wrap_content"></TextView>
+	            <EditText android:layout_height="wrap_content" android:inputType="number" android:layout_width="wrap_content" android:text="00" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="2" android:id="@+id/currentTimeMinutesEditText"></EditText>
+	            <TextView android:text="@string/timeSeperatorLabel" android:layout_height="wrap_content" android:id="@+id/TextView08" android:layout_width="wrap_content"></TextView>
+	            <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="00" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="2" android:id="@+id/currentTimeSecondsEditText"></EditText>
+	        </TableRow>
+	        <TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	            <TextView android:layout_width="wrap_content" android:id="@+id/TextView02" android:layout_height="wrap_content" android:text="@string/dateLabel"></TextView>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number" android:text="00" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="2" android:id="@+id/currentDateMonthsEditText"></EditText>
+	            <TextView android:layout_height="wrap_content" android:id="@+id/textView6" android:layout_width="wrap_content" android:text="@string/dateSeperatorLabel"></TextView>
+	            <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number" android:text="00" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="2" android:id="@+id/currentDateDaysEditText"></EditText>
+	            <TextView android:layout_height="wrap_content" android:id="@+id/textView7" android:layout_width="wrap_content" android:text="@string/dateSeperatorLabel"></TextView>
+	            <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="0000" android:singleLine="true" android:lines="1" android:digits="0123456789" android:maxLength="4" android:id="@+id/currentDateYearEditText"></EditText>
+	        </TableRow>
+	    </TableLayout>
+	    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="8sp" android:layout_marginBottom="8sp" android:id="@+id/hDivideLinearLayout1">
+	        <View android:background="#ffffff" android:layout_height="2sp" android:id="@+id/View01" android:layout_width="fill_parent" android:layout_gravity="center_vertical"></View>
+	    </LinearLayout>    
+    </LinearLayout>
+</ScrollView>

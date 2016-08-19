@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical" android:layout_margin="8sp">
+    <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enableAutomaticModeText" android:id="@+id/enableAutoModeCheckBox"></CheckBox>
+    <TableLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:stretchColumns="1" android:id="@+id/maxSlidersTableLayout">
+        <LinearLayout android:layout_marginBottom="8sp" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="8sp" android:id="@+id/hLinearLayout">
+            <View android:background="#ffffff" android:layout_gravity="center_vertical" android:layout_height="2sp" android:id="@+id/View01" android:layout_width="fill_parent"></View>
+        </LinearLayout>
+        <TableRow android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/blueSliderTableRow">
+            <TextView android:text="@string/blueText" android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_width="wrap_content"></TextView>
+            <SeekBar android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/blueSeekBar"></SeekBar>
+        </TableRow>
+	    <LinearLayout android:layout_marginBottom="8sp" android:layout_marginTop="8sp" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/hLinearLayout1">
+	        <View android:background="#ffffff" android:layout_gravity="center_vertical" android:layout_height="2sp" android:id="@+id/View02" android:layout_width="fill_parent"></View>
+	    </LinearLayout>        
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/whiteSliderTableRow">
+            <TextView android:text="@string/whiteText" android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_height="wrap_content"></TextView>
+            <SeekBar android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/whiteSeekBar"></SeekBar>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

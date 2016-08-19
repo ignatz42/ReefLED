@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Refresh" android:id="@+id/menuRefresh"></item><item android:title="Preferences" android:titleCondensed="Pref." android:id="@+id/menuPreferences"></item>
+    <item android:titleCondensed="Write" android:title="Write EEPROM" android:id="@+id/menuWriteE"></item>
+    
+</menu>
